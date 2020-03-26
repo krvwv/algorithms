@@ -1,7 +1,7 @@
 package com.algorithms;
 
 public class QuickSort {
-    public static void quick(int[] array, int p, int q){
+    public static void Quick(int[] array, int p, int q){
         int pivot=array[(p+q)/ 2];
         int i,j,temp;
         i=p;
@@ -22,10 +22,10 @@ public class QuickSort {
             }
         }
         if(j>p){
-            quick(array,p,j);
+            Quick(array,p,j);
         }
         if(i<q){
-            quick(array,i,q);
+            Quick(array,i,q);
         }
     }
 }

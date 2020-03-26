@@ -1,7 +1,7 @@
 package com.algorithms;
 
 public class BubbleSort {
-    public static void bubble(int[] array){
+    public static void Bubble(int[] array){
         int temp;
         for (int i=array.length-1;i>0;i--){
             boolean isSorted = true;

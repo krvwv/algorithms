@@ -5,16 +5,18 @@ public class Main {
 
     public static void main(String[] args) {
         Random random=new Random();
-        int[] array=new int[100000];
+        int[] array=new int[10];
         int[] array2;
         for (int i=0;i<array.length;i++)
         {
-            array[i]=random.nextInt(1000);
+            array[i]=random.nextInt(100);
         }
         array2=Arrays.copyOf(array,array.length);
 
-	    BubbleSort.bubble(array);
-	    QuickSort.quick(array2,0, array2.length-1);
-
+	    //BubbleSort.Bubble(array);
+	    //QuickSort.Quick(array2,0, array2.length-1);
+        System.out.println(Arrays.toString(array));
+        SelectionSort.Selection(array);
+        System.out.println(Arrays.toString(array));
 }
 }
